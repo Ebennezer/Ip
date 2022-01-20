@@ -1,0 +1,42 @@
+.topleft {
+    width: 50%;
+    padding: auto;
+    border:  20px;
+    margin: 20px;
+    float: left;
+    vertical-align: top;
+}
+.topright {
+    width: 30%;
+    padding: auto;
+    border:  20px;
+    margin: 20px;
+    float: right;
+    vertical-align: top;
+}
+.Right {
+    width: 30%;
+    padding: auto;
+    border:  20px;
+    margin: 20px;
+    float: right;
+    vertical-align: top;
+}
+.left {
+    width: 50%;
+    padding: auto;
+    border: 30px ;
+    margin: 30px;
+    float: left;
+    vertical-align: top;
+}
+.center {
+    width: 100%;
+    padding: auto;
+    border: 30px ;
+    margin: 30px;
+    float: inline-end;
+    vertical-align: bottom;
+    text-align: center;
+}
+}
