@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Life Index</title>
+    </head>
+<body>
+    <table width="100%" >
+            <tr>   
+                <td width="10%"></td>    
+                <td>        
+                 <img src="images\logo_gold.png" class="top" width="10%" height="15%">
+                </td>
+                <td align="right">
+                    <a class="top" href="">Podcasts</a> |<a href="">Articles</a> |<a href="">Ideas</a> |<a href="auth\signin.html">Sign in</a> |<a href="auth\register.html">Register</a>
+                </td>
+                <td width="10%"></td>    
+                <td> 
+            </tr>
+    </table>
+</hr>
+    <table width="100%" cellspacing=10>
+        <tr>
+            <td width="10%"></td>
+            <td align="right" colspan="2"><a href="#bottom"> Go to bottom</a></td>
+            <td width="10%"></td>
+        </tr>
+        <tr>
+            <td   width="10%"></td>
+            <td id="leftcol">
+                <h1>Eric Hoffer and the Power of Self-Education</h1>
+                <img id="myimg" src="images\banners\life1.jpg "  usemap="#image-map" width="100%" >
+
+                <map name="image-map">
+                    <area  title="Sky" alt="Sky" href="https://en.wikipedia.org/wiki/Sunset" coords="-12,-1,1,242,62,248,196,243,227,218,261,204,298,239,353,256,412,253,472,234,524,212,572,200,624,208,668,201,727,203,764,205,808,204,849,210,895,202,922,179,961,153,1010,167,1036,199,1075,203,1146,205,1189,199,1282,191,1281,0,191,-5" shape="poly">
+                    <area  title="Human" alt="Human" href="https://en.wikipedia.org/wiki/Human" coords="1000,245,1007,232,1008,214,1006,200,998,191,984,180,966,175,952,175,933,184,929,198,936,212,938,228,941,243,941,250,944,267,955,276,945,311,950,358,953,375,942,388,920,385,887,377,850,355,829,356,817,381,819,409,817,426,790,437,764,453,736,452,729,448,714,432,714,441,710,458,716,474,724,495,755,481,780,477,834,467,871,449,906,451,931,463,962,470,1007,475,1006,494,1019,504,1044,498,1022,333,1018,284,1022,261" shape="poly">
+                    <area title="bag" alt="Bag" href="https://en.wikipedia.org/wiki/Bags" coords="1042,266,1057,273,1067,266,1077,262,1086,270,1111,309,1118,336,1117,364,1118,399,1115,418,1120,457,1100,459,1084,467,1062,468,1044,469,1034,450,1032,432,1030,397,1023,371,1020,338,1020,316,1009,293" shape="poly">
+                </map>
+                <button onclick="swapFiles()" type="button">Swap</button>
+                <p>I recently read The True Believer by Eric Hoffer. It's a book about how mass movements evolve. With a lot of historical examples, the book explains the patterns and common threads among them. It's an insightful book and reading it was a great learning experience for me.</p>
+                    <img src="" height="30%" width="30%" alt="The True Believe book cover">
+               <p> What I'd like to share with you here is not the content of the book, though. Instead, I'd like to share with you about the author.
+                <br>You see, I didn't know Eric Hoffer before. But I imagined he must be a famous professor from a well-known university. I mean, whatelse could explain the depth of his insights? The true Believer is an influential book. Here is how <a href="">Wikipedia</a> put it...<a href="">read more</a><hr></p>
+                <h2>New Podcast</h2>
+                <h1>Jack Ma - How I Overcame Failure</h1>
+               <audio id="myAudio" src="audio\Jack Ma - How I Overcame Failure.mp3" controls></audio>
+               <br>
+                <button onclick="deleteAud()" type="button">Delete Audio</button>
+               </audio>
+                <hr>
+                <h2 id="bottom">Pick of The Week</h2>
+                <h1 >24 Hours a Day</h1>
+                <video id="myVideo" width="100%" height="100%" controls><source src="video\24_HOURS.mp4" type="video/mp4" ></video>
+                <button onclick="pauseVid()" type="button">Pause Video</button>
+                <button onclick="swapFiles()" type="button">Swap</button>
+                <br>
+            </td>
+
+                <td valign="top">
+                <h1>Recent Posts</h1>
+                <ul float="left">
+                    <li><h2>Articles</h2></li>
+                    <ul>
+                        <li>The Importance of Goals, Especially During Difficult Times</li>
+                        <li>5 Steps to Discovering Your Life Purpose In 2022!</li>
+                    </ul>
+                    <li><h2>Ideas</h2></li>
+                    <ul>
+                        <li>10 Books to Read in The Fall</li>
+                        <li>Top Web Development Project Ideas</li>
+                    </ul>
+                </ul>
+
+                <h1>Most Viewed Articles</h1>
+                <ol type="I">
+                    <li>Instant Gratification Is Stopping You From Reaching Your Goals!</li>
+                    <li>Stop Juggling Between Work And Life</li>
+                </ol>
+                <h1>IP Project Winners</h1>
+                <pre >
+----------------------------------
+Rank Award
+----------------------------------
+First Free hosting and support
+Second 5GB Mobile Data
+Third 1GB Mobile Data
+----------------------------------
+                </pre>
+                <button onclick="addImg()" type="button">Add Image</button>
+        </td>
+        <td width="10%"></td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td>
+                <p>Follow Us On:<a href="">Facebook</a> | <a href="">Twitter</a></p>
+            </td>
+            <td align="right">
+                <a href="">Privacy</a> | <a href="">Terms of Use</a>
+            </td>
+            <td width="10%"></td>
+
+        </tr>
+        <hr>
+        <tr>
+            <td colspan="4" align="center" > 
+
+                <p >Copyright © AASTU SEng 2021, All Rights Reserved</p>
+            </td>
+        </tr>
+    <script>
+        var vid = document.getElementById("myVideo"); 
+        var aud = document.getElementById("myAudio");
+        var img = document.getElementById("myimg");
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+}
+function playAud() { 
+  aud.play(); 
+} 
+
+function pauseAud() { 
+  aud.pause(); 
+} 
+function deleteAud(){
+aud.remove();
+}
+function addImg(){
+    const para=document.createElement("img");
+para.src = "images/logo_gold.png";
+    const element= document.getElementsByTagName("pre");
+    element[0].appendChild(para);
+}
+function swapFiles(){
+    var afterImg=img.nextElementSibling;
+    var parent= document.getElementById("leftcol");
+    parent.replaceChild(img,vid);
+    parent.insertBefore(vid,afterImg);
+}
+
+        </script>
+
+</body>
+
+
+
+
+
+</html>
