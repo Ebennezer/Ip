@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>life hacks index</title>
+        <script>
+            function myFunction() {
+    alert("The form was submitted");
+}
+        function printDetails(){
+            var name= document.getElementById("name").value;
+            var num= document.getElementById("number").value;
+            var age= document.getElementById("age").value;
+            var color= document.getElementById("color").value;
+
+            document.getElementById("textbox").innerHTML="Name: "+name+"\n"+
+            "Number: "+num+"\n"+
+            "Age: "+age+"\n"+
+            "Color: "+color+"'Airplane'\n"
+            ;
+        }
+        </script>
+    </head>
+<body>
+    
+    <table >
+        <tr>
+            <td width="10%">
+                <p>   </p>
+            </td>
+            <td width="55%">
+                <img src="C:\Users\Ebenezer\Desktop\Lab class\lab2\resources\images\logo_gold.png" height="10%" width="10%">
+            </td>
+            <td align="right" width="25%">
+                <a href="">Podcasts</a> |<a href="">Articles</a> |<a href="">Ideas</a> |<a href="signin.html">Sign in</a> |<a href="register.html">Register</a>
+            </td>
+            <td width="10%">
+                <p> </p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table  cellpadding="11%" width="100%">
+        <tr>
+            <td width="10%">
+                <p>   </p>
+            </td>
+            <td width="55%">
+               <p> </p>
+            </td>
+            <td align="right" width="25%">
+                <a href="">Go to bottom</a>
+            </td>
+            <td width="10%">
+                <p> </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+                <p></p>
+            </td>
+            <td  width="50%" valign="top">
+                <h1>Register</h1>
+                <form onsubmit="myFunction()">
+                    <label>Full Name</label><br>
+                    <input type="text" id="name" required maxlength="50"><br>
+                    <label>Phone</label><br>
+                    <input type="telephone" id="number" required ><br>
+                    <label>Age</label><br>
+                    <input type="number" id="age" required min="18" max="130" ><br>
+                    <label>Your Favorite Color</label><br>
+                    <input type="color" id="color" ><br>
+                    <label>Birthdate</label><br>
+                    <input type="date" ><br>
+                    <label>Gender</label><br>
+                    <label>Female</label><input type="radio"  >
+                    <label>Male</label><input type="radio" ><br>
+                    <label>Password</label><br>
+                    <input type="password" required minlength="6" maxlength="32"><br>
+                    <label>Confirm Password</label><br>
+                    <input type="Password" required minlength="6" maxlength="32"><br>
+                    <label>Skills</label><br>
+                    <ul>
+                    <li><input type="checkbox"><label>HTML</label><br></li>
+                    <li><input type="checkbox"><label>CSS</label><br></li>
+                    <li><input type="checkbox"><label>Javascript</label><br></li>
+                    <li><input type="checkbox"><label>PHP</label><br></li>
+                </ul>
+                    <label>Country</label>
+                    <select name="Country">
+                        <option>Ethiopia</option>
+                        <option>Canada</option>
+                        <option>South Africa</option>
+                        <option>Kenya</option>
+                    </select><br>
+                    <label>Photo</label><br>
+                    <input type="file"><br>
+                    <label>Describe Yourself</label><br>
+                    <textarea></textarea><br>
+                    
+                    <input type="submit" value="Submit"> 
+                    <input type="reset" value="Reset">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label>Print Details:</label><br>
+                    <textarea id="textbox" cols="30" rows="10"></textarea><br>
+                    
+                    <input type="button" onclick="printDetails()" value="print"> 
+                </form>
+            </td>
+            <td  width="30%" valign="top" padding="15px" >
+                <h1>Recent Posts</h1>
+                <ul>
+                    <li><h2>Articles</h2></li>
+                    <ul>
+                        <li>The Importance of Goals, Especially During Difficult Times</li>
+                        <li>5 Steps to Discovering Your Life Purpose In 2022!</li>
+                    </ul>
+                    <li><h2>Ideas</h2></li>
+                    <ul>
+                        <li>10 Books to Read in The Fall</li>
+                        <li>Top Web Development Project Ideas</li>
+                    </ul>
+                </ul>
+
+                <h1>Most Viewed Articles</h1>
+                <ol type="I">
+                    <li>Instant Gratification Is Stopping You From Reaching Your Goals!</li>
+                    <li>Stop Juggling Between Work And Life</li>
+                </ol>
+                <h1>IP Project Winners</h1>
+                <pre >
+----------------------------------
+Rank Award
+----------------------------------
+First Free hosting and support
+Second 5GB Mobile Data
+Third 1GB Mobile Data
+----------------------------------
+                </pre>
+            </td >
+            <td width="10%">
+
+            </td>
+
+        </tr>
+        <tr>
+            <td width="10%">   
+                <p></p>
+            </td>
+            <td colspan="2">
+                <hr>
+            </td>
+            <td width="10%">   
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">   
+                <p></p>
+            </td>
+            <td width="50%">   
+                <p>Follow Us On:<a href="">Facebook</a> | <a href="">Twitter</a></p>
+            </td>
+            <td width="30%" align="right">   
+                <a href="">Privacy</a> | <a href="">Terms of Use</a>
+            </td>
+            <td width="10%">   
+                <p></p>
+            </td>
+        </tr>
+       
+
+
+    </table>
+<p align="center">Copyright © AASTU SEng 2021, All Rights Reserved</p>
+
+</body>
+
+
+
+
+
+</html>
